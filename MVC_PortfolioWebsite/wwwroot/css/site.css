@@ -1,0 +1,57 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* Add rules to style dark mode when toggle is selected*/
+.dark {
+    transition: all 0.5s;
+    background-color: #3F3F3F !important;
+    text-shadow: none;
+    box-shadow: none;
+    color: white !important;
+}
+
+/* Change the mouse pointer when the theme toggle is hovered over*/
+#dark-mode-toggle:hover {
+    cursor: pointer;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: solid;
+    border-color: darkslategray;
+    padding: 20px;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+fieldset.contact-form {
+    border: solid;
+    border-width: 1px;
+    border-color: grey;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+legend {
+    justify-content: center;
+}
