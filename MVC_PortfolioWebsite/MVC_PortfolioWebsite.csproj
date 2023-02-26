@@ -7,9 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="images\" />
+    <Content Remove="wwwroot\images\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="images\" />
+    <Folder Include="wwwroot\images\" />
   </ItemGroup>
 </Project>
