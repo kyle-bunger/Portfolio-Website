@@ -1,6 +1,6 @@
 ﻿html {
-  font-size: 14px;
-  background-color: whitesmoke;
+    font-size: 14px;
+    background-color: rgb(252, 252, 252); /* Off-white background */
 }
 
 @media (min-width: 768px) {
@@ -15,56 +15,59 @@ html {
 
 }
 
-/* Add rules to style dark mode when toggle is selected*/
-.dark {
-    transition: all 0.3s;
-    background-color: #3F3F3F !important;
-    text-shadow: none;
-    box-shadow: none;
-    color: white !important;
-}
+
+
 
 /* Change the mouse pointer when the theme toggle is hovered over*/
 #dark-mode-toggle:hover {
     cursor: pointer;
 }
 
-.display-4 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 125px;
-    margin-right: 650px;
+/* This is the title text element */
+div .title {
+    display: flex;
+    font: bold;
+    font-family: Poppins, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 120px;
+    background-image: linear-gradient(60deg, #E21143, #FFB03A);
+    -webkit-background-clip: text; /* Gradient effect to the page title*/
+    color: transparent; /* Since the gradient is a background element, must be transparent to show text*/
 }
 
 /* Add some styling to the subtitle*/
 .subtitle {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: underline;
-    text-decoration-style: double;
-    text-decoration-color: red;
-    text-underline-offset: 7px;
-    text-shadow: 0px 4px 2px #C1C1C1;
+    font-family: Garamond, sans-serif;
+    color: rgb(75, 75, 75);
+    font-size: 30px;
+    text-shadow: 0px 2px 1px #C1C1C1;
 }
 
 .intro {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 25px;
+    text-align: left;
+    padding-top: 25px;
 }
 
-.introduction {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 15px;
-    font-size: 25px;
-    box-shadow: 0px 0px 17px -5px black;
+.section-subtitles {
+    color: #ee5a42;
+}
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
 }
 
 body {
-  margin-bottom: 60px;
-  background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    background-color: rgb(252, 252, 252); /* "Off-white background */
+}
+
+main.pb3 {
+    /* Narrow the margins of the main content
+        just a bit
+    */
+
+    display: flex;
 }
 
 /* Style the layout of the contact form */
@@ -85,9 +88,29 @@ legend {
     justify-content: center;
 }
 
-/* Create circular image */
-.headshot {
+/* Create circular image and size to fit */
+.profile-pic {
     border-radius: 50%;
-    width: 350px;
-    height: 350px;
+    width: 28px;
+    height: 28px;
+}
+
+/* Add rules to style dark mode when toggle is selected*/
+.dark {
+    transition: all 0.3s;
+    background-color: #3F3F3F !important;
+    text-shadow: none;
+    box-shadow: none;
+    color: white !important;
+    border-color: black !important;
+}
+
+#skills {
+    text-align: center;
+}
+
+.my-bag {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }

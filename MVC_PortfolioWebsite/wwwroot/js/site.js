@@ -5,6 +5,7 @@
 
 const changeTheme = document.querySelector('#dark-mode-toggle');
 changeTheme.addEventListener("click", function () {
+
     const everything = document.querySelectorAll('*');
     everything.forEach((item) => {
         item.classList.toggle('dark');

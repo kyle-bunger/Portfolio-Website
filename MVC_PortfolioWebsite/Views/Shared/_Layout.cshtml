@@ -16,8 +16,16 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between" id="toolbar-items">
                     <ul class="navbar-nav">
+                        <!-- Add a nav-item containing my photo and name
+                                the user can click to return to landing page-->
+                        <li class="nav-item">
+                            <a class="nav-link" id="home-button" asp-area=""
+                               asp-controller="Home" asp-action="AboutMe">
+                            <img class="profile-pic" id="headshot" src="~/images/Headshot.jpeg" alt="Profile Picture" /> Kyle Bunger
+                            </a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="AboutMe">About Me</a>
                         </li>
